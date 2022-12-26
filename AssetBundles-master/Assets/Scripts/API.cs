@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 
 public class API : MonoBehaviour {
 
-    const string BundleFolder = "https://www.matthewhallberg.com/AssetBundles/";
+    const string BundleFolder = "https://unityassetbundlejpeg.s3.ap-south-1.amazonaws.com/AssetBundles/";
 
     public void GetBundleObject(string assetName, UnityAction<GameObject> callback, Transform bundleParent) {
         StartCoroutine(GetDisplayBundleRoutine(assetName, callback, bundleParent));
